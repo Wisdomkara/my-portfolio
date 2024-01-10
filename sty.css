@@ -80,3 +80,19 @@ h4{
    max-width: 100%;
    position: relative;
 }
+.newsletter form input:first-child{ display: in-block;
+    width: 100%;
+    padding: 14px 13px 14px 15px;
+    border: 2px solid #4169E1;
+    border-radius: 30px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px ;
+ border-radius: 30px;
+ background-color:#4169E1;
+ box-shadow: 10px 10px 5px #000, 10px 10px 15px #858585;
+}
