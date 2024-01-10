@@ -49,4 +49,19 @@ border-radius: 30px;}
 a button:hover{
     background-color: blue;
     color: aqua;
+    transition: transform  ease;
+    transition: ease 1s;
+}
+a button:hover{transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px ;
 }
