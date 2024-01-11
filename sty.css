@@ -106,5 +106,5 @@ background-size: cover;
     margin-left: 50%;
     margin-top: 20px;
     width: 50;
-box-shadow:10px 10px 5px #000, 10px 10px 15px #858585; ;
+box-shadow:10px 10px 5px #000, 10px 10px 15px rgb(21, 21, 175) ;
 }
