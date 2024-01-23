@@ -1,3 +1,4 @@
+/* general styling */
 * {
   padding: 0px;
   margin: 0px;
@@ -11,100 +12,168 @@
   background-size: cover;
   background-position: center;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
 
+/* navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
-.logo{color: white;
-font-size: 35px;
-letter-spacing: 1px;
-cursor: pointer;
+/* logo design */
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
-span{color: #4169E1;}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    color: white;
-    padding: 10px;
-    
+
+/* extra styling for text span */
+span {
+  color: #4169e1;
 }
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+span:hover {
+  color: rgb(30, 255, 0);
 }
-nav ul li a:hover{
-    color: #4169E1;
-    transition: .4s;
+
+/* link styling */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  color: white;
+  padding: 10px;
 }
-a button{color: whitesmoke;
-background-color: #4169E1;
-padding: 15px;
-border-radius: 30px;}
-a button:hover{
-    background-color: blue;
-    color: aqua;
-    transition: transform  ease;
-    transition: ease 1s;
+/* links syling in navigation */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
-a button:hover{transform: scale(1.2);
+
+/* hover styling for links */
+nav ul li a:hover {
+  color: #4169e1;
+  transition: 0.4s;
 }
-.content{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+/* nav ul li a:visited{color: aqua;}
+nav ul li a:active{color: #4169E1;} */
+
+/* button styling */
+a button {
+  color: whitesmoke;
+  background-color: #4169e1;
+  padding: 15px;
+  border-radius: 30px;
 }
-h1{
-    color: white;
-    margin: 20px 0px 20px;
-    font-size: 75px ;
+
+/* button hover styling */
+a button:hover {
+  background-color: blue;
+  color: aqua;
+  transition: transform ease;
+  transition: ease 1s;
 }
-h3{
-    color: white;
-    font-size: 25px;
-    margin-bottom: 50px;
+
+/* link button hover */
+a button:hover {
+  transform: scale(1.2);
 }
-h4{
-    color: #fcfc;
-    letter-spacing: 2px;
-    font-size: 20px;
- }
-.newsletter form{
-    width: 380px;
-   max-width: 100%;
-   position: relative;
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
 }
-.newsletter form input:first-child{ display: in-block;
-    width: 100%;
-    padding: 14px 13px 14px 15px;
-    border: 2px solid #4169E1;
-    border-radius: 30px;
+/* button text syling */
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
 }
-.newsletter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px ;
- border-radius: 30px;
- background-color:#4169E1;
- box-shadow: 10px 10px 5px #000, 10px 10px 15px #858585;
- top: 2px;
- right: 6px;
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
 }
-section{ background-image: url('imaging.jpg');
-background-size: cover;
+h4 {
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+/* form stlying */
+.newsletter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.newsletter form input:first-child {
+  display: in-block;
+  width: 100%;
+  padding: 14px 13px 14px 15px;
+  border: 2px solid #4169e1;
+  border-radius: 30px;
+}
+.newsletter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #4169e1;
+  box-shadow: 10px 10px 5px #000, 10px 10px 15px #858585;
+  top: 2px;
+  right: 6px;
+}
+
+section {
+  background-image: url("imaging.jpg");
+  background-size: cover;
   background-position: center;
 }
-.imgg{
-    margin-left: 50%;
-    margin-top: 20px;
-    width: 50;
-box-shadow:10px 10px 5px #000, 10px 10px 15px rgb(21, 21, 175) ;
+.imgg {
+  margin-left: 50%;
+  margin-top: 20px;
+  width: 50;
+  box-shadow: 10px 10px 5px #000, 10px 10px 15px rgb(21, 21, 175);
+  animation-name: slide;
+  animation-duration: 5s;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  0% {
+    transform: translateY(-0px);
+  }
+}
+.hi{
+ display: flex;
+ justify-content: center;
+ color: white;
+}
+aside{
+  display: flex;
+  justify-content: center;
+  color: #4169e1;
+}
+.career{
+  color: white;
+  animation-name: name;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+@keyframes name {
+  from{color: white;}
+  to{color: rgb(50, 204, 96);}
+  
 }
