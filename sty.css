@@ -138,7 +138,7 @@ section {
   margin-left: 50%;
   margin-top: 20px;
   width: 50;
-  box-shadow: 10px 10px 5px #000, 10px 10px 15px rgb(21, 21, 175);
+  box-shadow: 10px 10px 5px rgb(33, 78, 226), 10px 10px 15px rgb(121, 121, 139);
   animation-name: slide;
   animation-duration: 5s;
   -o-animation-iteration-count: infinite;
