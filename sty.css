@@ -179,3 +179,16 @@ aside{
   100%{color: rgb(24, 167, 167);}
   
 }
+h2{
+  color: beige;
+  font-size: 30px;
+  
+}
+body{
+  background-color: cyan;
+
+}
+.senior{
+  color: rgba(238, 17, 17, 0.452);
+  font-size: 5rem;
+}
